@@ -1,0 +1,18 @@
+<html>
+    <head>
+       <script type="text/javascript">
+          function x(){
+            if(document.thebox.box.checked)
+                alert("good");
+            else
+                alert("click the box!") 
+          }  
+       </script>   
+    </head>
+    <body>
+        <form name="thebox">
+            <input type="checkbox" name="box"/>
+            <input type="button" value="submit" onclick="x()"/>
+        </form>
+    </body>
+</html>
