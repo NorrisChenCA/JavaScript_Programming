@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            const person = {
+                fristName : "Norris",
+                lastName : "Chen",
+                get fullName(){
+                    return `${person.fristName} ${person.lastName}`;
+                }
+                set fullName(value){
+                    const parts = value.split('');
+                    this.fristName = parts[0];
+                    this.lastName = parts[1];
+                }
+            };
+            person.fullName = "Martin Chen";
+
+            console.log(person);
+        </script>
+    </body>
+</html>
